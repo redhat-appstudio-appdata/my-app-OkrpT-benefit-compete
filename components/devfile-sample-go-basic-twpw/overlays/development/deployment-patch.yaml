@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-twpw
+  namespace: llevenha-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:0055b2ef60f4fe77fdadadc21fb8797d3f309a5a245b822cf8c243bf21a05e69
+        name: my-go
+        resources: {}
+status: {}
